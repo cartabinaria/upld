@@ -23,7 +23,7 @@ var (
 type Config struct {
 	ClientID     string        // The OAuth client ID
 	ClientSecret string        // The OAuth client secret
-	BaseURL      *url.URL      // The base URL from where csunibo/upld is being served from
+	BaseURL      *url.URL      // The base URL from where cartabinaria/upld is being served from
 	SigningKey   []byte        // The key to sign the JWTs with
 	Expiration   time.Duration // How long should user sessions last?
 }

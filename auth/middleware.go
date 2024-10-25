@@ -1,7 +1,7 @@
 package auth
 
 import (
-	"github.com/csunibo/upld/util"
+	"github.com/cartabinaria/upld/util"
 	"github.com/golang-jwt/jwt/v5"
 	"net/http"
 )

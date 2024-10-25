@@ -1,4 +1,4 @@
-module github.com/csunibo/upld
+module github.com/cartabinaria/upld
 
 go 1.20
 

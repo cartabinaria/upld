@@ -11,8 +11,8 @@ import (
 	"github.com/pelletier/go-toml/v2"
 	"golang.org/x/exp/slog"
 
-	"github.com/csunibo/upld/auth"
-	csunibo "github.com/csunibo/upld/github"
+	"github.com/cartabinaria/upld/auth"
+	cartabinaria "github.com/cartabinaria/upld/github"
 )
 
 type Config struct {
@@ -60,7 +60,7 @@ func main() {
 	// }
 	//
 	// // TODO: From here it's all testing code
-	// repositories, _, err := client.Repositories.List(context.Background(), "csunibo", nil)
+	// repositories, _, err := client.Repositories.List(context.Background(), "cartabinaria", nil)
 	// if err != nil {
 	// 	slog.Error("failed to list repositories", "err", err)
 	// 	os.Exit(1)
@@ -72,7 +72,7 @@ func main() {
 	//
 	// comment, _, err := client.Issues.CreateComment(
 	// 	context.Background(),
-	// 	"csunibo",
+	// 	"cartabinaria",
 	// 	"ing-sistemi-informativi-test",
 	// 	1,
 	// 	&github.IssueComment{
@@ -110,7 +110,7 @@ func main() {
 }
 
 func initializeClient() (*github.Client, error) {
-	app, err := csunibo.NewApp(&csunibo.AppConfig{
+	app, err := cartabinaria.NewApp(&cartabinaria.AppConfig{
 		AppID:   config.AppID,
 		KeyPath: config.PrivateKeyPath,
 	})

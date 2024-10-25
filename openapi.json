@@ -10,7 +10,7 @@
   },
   "servers": [
     {
-      "url": "https://upld.risorse.students.cs.unibo.it"
+      "url": "https://upld.dynamik.vercel.app"
     }
   ],
   "paths": {
